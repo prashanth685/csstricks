@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+.main {
+  min-height: 100vh;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  padding: 10px;
+  background: #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 30px 40px;
+  width: 350px;
+  text-align: center;
+}
+
+.container h2 {
+  font-size: 2rem;
+  margin-top: 12px;
+}
+
+.input-container {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.box {
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+}
+.red {
+  background: red;
+  left: 0;
+  top: 50px;
+  z-index: 1;
+}
+.yellow {
+  background: yellow;
+  left: 1rem;
+  top: 100px;
+  z-index: 2;
+}
+.label::before {
+  content: "*";
+  color: red;
+}
