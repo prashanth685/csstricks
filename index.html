@@ -26,5 +26,19 @@
     <div class="box red"></div>
     <div class="box yellow"></div>
     <p class="label">Username</p>
+    <script>
+      // localStorage.setItem("user", JSON.stringify({ name: "ajay" }));
+      // let name = JSON.parse(localStorage.getItem("user"));
+      // console.log(name);
+
+      function setExpiry(key, value, ttl) {
+        const now = new Date();
+        const item = {
+          value: value,
+          expiry: now.getTime() + ttl,
+        };
+        localStorage.setItem(key, JSON.stringify(item));
+      }
+    </script>
   </body>
 </html>
